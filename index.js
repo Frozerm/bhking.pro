@@ -46,6 +46,9 @@ setTimeout(function(){
       $("#loading").removeClass("animated fadeOut");
       $("#loading").css("display","none");
       $("#box").css("display","none");
+      $("#about-ru").removeClass("animated fadeIn");
+      $("#contact-ru").removeClass("animated fadeIn");
+      $("#work-ru").removeClass("animated fadeIn");
       $("#about").removeClass("animated fadeIn");
       $("#contact").removeClass("animated fadeIn");
       $("#work").removeClass("animated fadeIn");
