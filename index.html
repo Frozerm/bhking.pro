@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Frozerm</title>
+
+    <link rel="icon" href="src\assets\favicon.png" type="image/png" />
+
+    <!-- Splide CSS CDN -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    /></noscript>
+
+    <link rel="stylesheet" href="dist/main.css" />
+  </head>
+  <body data-barba="wrapper">
+    <!-- Custom cursor -->
+    <div class="custom__cursor"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader__overlay"></div>
+      <p class="preloader__counter">
+        <span class="preloader__number" id="counter">0</span>
+        <span class="box-1"></span>
+        <span class="box-2"></span>
+        <span class="box-3"></span>
+        <span class="box-4"></span>
+      </p>
+      <div class="preloader__overlay"></div>
+    </div>
+
+    <!-- Transition Overlay -->
+    <div class="transition__overlay"></div>
+
+    <main
+      class="container"
+      data-barba="container"
+      data-barba-namespace="home-page"
+    >
+      <!-- Header -->
+      <header class="header">
+        <div class="header__wrapper">
+          <a
+            href="index.html"
+            id="header-link"
+            class="header__wrapper--link flex-1"
+            >[ <span>bhking</span> <span>pro</span> ]</a
+          >
+          <p id="header-comp1" class="header__availability flex-1 flex-22">
+            MY FRIENDS →
+          </p>
+
+          <div id="header-comp1" class="time flex-2 flex-3">
+            <p class="time__model">soundcloud.org</p>
+            <p class="time__model">Awopzz</p>
+            <p class="time__model">Snowtsu</p>
+            <p class="time__model">flowerboy</p>
+            <p class="time__model">just_chill</p>
+          </div>
+
+          <div id="header-comp1" class="contact flex-2 flex-4">
+            <ul class="list">
+              <p class="list__item">contact:</p>
+              <li class="list__item">
+                <a
+                  href="https://t.me/frozerm"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="hover__link"
+                  >telegram channel</a
+                >
+              </li>
+              <li class="list__item">
+                <a
+                  href="https://x.com/FrozermBH"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="hover__link"
+                  >twitter</a
+                >
+              </li>
+              <li class="list__item">
+                <a
+                  href="https://discord-tracker.com/tracker/user/469409297747410944/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="hover__link"
+                  >Discord-Tracker</a
+                >
+              </li>
+              <li class="list__item">
+                <a
+                  href="https://gamebanana.com/members/2604135"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="hover__link"
+                  >gamebanana</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Mobile navigation -->
+      <section class="mobile__nav">
+        <div class="nav__wrapper">
+          <div class="top__container">
+            <div class="time flex-2 flex-3" id="mobileComp">
+              <p class="time__model" style="margin-bottom: 12px">MY FRIENDS:</p>
+              <p class="time__model">kisaki</p>
+              <p class="time__model">harding crime</p>
+              <p class="time__model">художник</p>
+              <p class="time__model">htmlowner</p>
+            </div>
+
+            <button class="hamburger__close" id="close">
+              <img src="/src/assets/Group_9_2_vr65lb.webp" />
+            </button>
+          </div>
+
+          <footer class="mobile__footer">
+            <div class="top__container" id="mobileComp">
+              <ul>
+                <li class="footer__list">contact:</li>
+                <li class="footer__list">
+                  <a
+                    href="https://t.me/frozerm"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >telegram channel</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="https://x.com/FrozermBH"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >twitter</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="https://discord-tracker.com/tracker/user/469409297747410944/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Discord-Tracker</a
+                  >
+                </li>
+                <li class="footer__list">
+                  <a
+                    href="https://gamebanana.com/members/2604135"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >gamebanana</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="bottom__container" id="mobileComp">
+              <p class="bottom__container--year">
+                &copy; <span id="year">2024</span>
+              </p>
+            </div>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Hamburger menu -->
+      <button
+        id="header-comp1"
+        class="hamburger hamburger__menu"
+        id="hamburger-menu"
+      >
+        menu
+      </button>
+
+      <!-- Main page content -->
+      <div class="container__wrapper">
+        <h1 class="wrapper__heading">
+          <div class="home__container">
+            <span id="home-paragraph" class="home__container--text"
+              >Frozerm</span
+            >
+          </div>
+          <div class="home__container">
+            <span id="home-paragraph" class="home__container--text">Programmer</span>
+          </div>
+          <div class="home__container">
+            <span id="home-paragraph" class="home__container--text"
+              >Web-developer</span
+            >
+          </div>
+          <div class="home__container">
+            <span id="home-paragraph" class="home__container--text"
+              >Brawlhalla Japan top player</span
+            >
+          </div>
+          <div class="home__container">
+            <span id="home-paragraph" class="home__container--text"
+              >Client eSports director</span
+            >
+          </div>
+          <div class="home__container">
+            <span id="home-paragraph" class="home__container--text"
+              >Brawlhalla mod creator</span
+            >
+          </div>
+        </h1>
+
+        <!--  Carousel-->
+        <section class="splide" aria-roledescription="carousel">
+          <div class="splide__track">
+            <ul class="splide__wrapper splide__list">
+              <li class="splide__slide" aria-label="Slide 1">
+                <p id="slide-heading" class="slide__heading">
+                  [ <span>Awopzz</span> ]
+                </p>
+
+                <div
+                  id="image-container"
+                  class="image__container image__container--box"
+                >
+                  <a href="#">
+                    <img src="src\assets\img\awopzz1.webp">
+                  </a>
+                </div>
+                <div
+                  id="image-container"
+                  class="image__container image__container--square"
+                >
+                  <a href="#">
+                    <img src="src\assets\img\awopzz2.jpg">
+                  </a>
+                </div>
+              </li>
+
+              <li class="splide__slide" aria-label="Slide 2">
+                <p id="slide-heading" class="slide__heading">
+                  [ <span>just_chill</span> ]
+                </p>
+
+                <div id="image-container" class="image__container">
+                  <a href="#">
+                    <img src="src\assets\img\just_chill1.gif" />
+                  </a>
+                </div>
+                <div
+                  id="image-container"
+                  class="image__container image__container--box"
+                >
+                  <a href="#">
+                    <img src="src\assets\img\just_chill2.gif" />
+                  </a>
+                </div>
+              </li>
+
+              <li class="splide__slide" aria-label="Slide 3">
+                <p id="slide-heading" class="slide__heading">
+                  [ <span>Frozerm</span> ]
+                </p>
+
+                <div id="image-container" class="image__container">
+                  <a href="#">
+                    <img src="src\assets\img\Frozerm1.jpg" />
+                  </a>
+                </div>
+                <div
+                  id="image-container"
+                  class="image__container image__container--square"
+                >
+                  <a href="#">
+                    <img src="src\assets\img\Frozerm2.jpg" />
+                  </a>
+                </div>
+              </li>
+
+              <li class="splide__slide" aria-label="Slide 3">
+                <p id="slide-heading" class="slide__heading">
+                  [ <span>flowerboy</span> ]
+                </p>
+
+                <div id="image-container" class="image__container">
+                  <a href="#">
+                    <img src="src\assets\img\flowerboy.webp" />
+                  </a>
+                </div>
+              </li>
+
+              <li class="splide__slide" aria-label="Slide 3">
+                <p id="slide-heading" class="slide__heading">
+                  [ <span>Snowtsu</span> ]
+                </p>
+
+                <div id="image-container" class="image__container">
+                  <a href="#">
+                    <img src="src\assets\img\Snowtsu1.jpg" />
+                  </a>
+                </div>
+                <div id="image-container" class="image__container image__container--square"">
+                  <a href="#">
+                    <img src="src\assets\img\snowtsu2.png" />
+                  </a>
+                </div>
+              </li>
+
+              <li class="splide__slide" aria-label="Slide 3">
+                <p id="slide-heading" class="slide__heading">
+                  [ <span>soundcloud</span> ]
+                </p>
+
+                <div id="image-container" class="image__container">
+                  <a href="#">
+                    <img src="src\assets\img\soundcloud.jpg" />
+                  </a>
+                </div>
+                <div id="image-container" class="image__container image__container--square"">
+                  <a href="#">
+                    <img src="src\assets\img\soundcloud2.jpg" />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__overlay" id="footer-overlay"></div>
+        <div class="footer__wrapper">
+          <p id="footer-comp1" class="footer__meridians flex-1">
+            Design by soundcloud.org
+          </p>
+          <p id="footer-comp1" class="footer__year flex-2 flex-3">
+            &copy; <span id="year">2023</span>
+          </p>
+          <span id="footer-comp1" class="footer__decoBox flex-2 flex-4"></span>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Cloudinary core library -->
+    <script src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.js"></script>
+
+    <!-- Barbajs jsdelivr CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+
+    <!-- Splide JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+    <!-- Lenis smooth scroll CDN -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
+
+    <!-- GSAP core, Flip, scrolltrigger and text plugin CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+
+    <!-- Script file for JS -->
+    <script src="script.js"></script>
+  </body>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(96978933, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/96978933" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</html>
